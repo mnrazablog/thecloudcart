@@ -1,0 +1,1 @@
+web: gunicorn thecloudcart.wsgi --log-file -
