@@ -1,690 +1,549 @@
 {% load static %}
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title></title>
-<base  />
-<meta name="description" content="My Store" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link href="{% static 'shop/image/catalog/cart.png' %}" rel="icon" />
-<script src="{% static 'shop/catalog/view/javascript/jquery/jquery-2.1.1.min.js' %}" type="text/javascript"></script>
-<script src="{% static 'shop/catalog/view/javascript/bootstrap/js/bootstrap.min.js' %}" type="text/javascript"></script>
-<link href="{% static 'shop/catalog/view/javascript/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" />
-<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
-<link href="{% static 'shop/catalog/view/theme/OPC070165/stylesheet/stylesheet.css' %}" rel="stylesheet">
-
-<link rel="stylesheet" type="text/css" href="{% static 'shop/catalog/view/theme/OPC070165/stylesheet/megnor/carousel.css' %}" />
-<link rel="stylesheet" type="text/css" href="{% static 'shop/catalog/view/theme/OPC070165/stylesheet/megnor/custom.css' %}" />
-<link rel="stylesheet" type="text/css" href="{% static 'shop/catalog/view/theme/OPC070165/stylesheet/megnor/bootstrap.min.css' %}" />
-
-<link href="{% static 'shop/catalog/view/javascript/jquery/owl-carousel/owl.carousel.css' %}" type="text/css" rel="stylesheet" media="screen" />
-<link href="{% static 'shop/catalog/view/javascript/jquery/owl-carousel/owl.transitions.css' %}" type="text/css" rel="stylesheet" media="screen" />
-<!-- Megnor www.templatemela.com - Start -->
-<script type="text/javascript" src="{% static 'shop/catalog/view/javascript/megnor/custom.js' %}"></script>
-<script type="text/javascript" src="{% static 'shop/catalog/view/javascript/megnor/jstree.min.js' %}"></script>
-<script type="text/javascript" src="{% static 'shop/catalog/view/javascript/megnor/carousel.min.js' %}"></script>
-<script type="text/javascript" src="{% static 'shop/catalog/view/javascript/megnor/megnor.min.js' %}"></script>
-<script src="{% static 'shop/catalog/view/javascript/megnor/tabs.js' %}" type="text/javascript"></script>
-<script type="text/javascript" src="{% static 'shop/catalog/view/javascript/megnor/jquery.custom.min.js' %}"></script>
-<script type="text/javascript" src="{% static 'shop/catalog/view/javascript/megnor/scrolltop.min.js' %}"></script>
-<script type="text/javascript" src="{% static 'shop/catalog/view/javascript/megnor/jquery.formalize.min.js' %}"></script> 
-<script type="text/javascript" src="{% static 'shop/catalog/view/javascript/megnor/jquery.bxslider.min.js' %}"></script>
-<!-- Megnor www.templatemela.com - End -->
-
-<script src="{% static 'shop/catalog/view/javascript/common.js' %}" type="text/javascript"></script>
-
-<script src="{% static 'shop/catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js' %}" type="text/javascript"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <base />
+    <meta name="description" content="My Store" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="{% static 'shop/image/catalog/cart.png' %}" rel="icon" />
+    <script src="{% static 'shop/catalog/view/javascript/jquery/jquery-2.1.1.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'shop/catalog/view/javascript/bootstrap/js/bootstrap.min.js' %}" type="text/javascript"></script>
+    <link href="{% static 'shop/catalog/view/javascript/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+    <link href="{% static 'shop/catalog/view/theme/OPC070165/stylesheet/stylesheet.css' %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'shop/catalog/view/theme/OPC070165/stylesheet/megnor/carousel.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'shop/catalog/view/theme/OPC070165/stylesheet/megnor/custom.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'shop/catalog/view/theme/OPC070165/stylesheet/megnor/bootstrap.min.css' %}" />
+    <link href="{% static 'shop/catalog/view/javascript/jquery/owl-carousel/owl.carousel.css' %}" type="text/css" rel="stylesheet" media="screen" />
+    <link href="{% static 'shop/catalog/view/javascript/jquery/owl-carousel/owl.transitions.css' %}" type="text/css" rel="stylesheet" media="screen" />
+    <!-- Megnor www.templatemela.com - Start -->
+    <script type="text/javascript" src="{% static 'shop/catalog/view/javascript/megnor/custom.js' %}"></script>
+    <script type="text/javascript" src="{% static 'shop/catalog/view/javascript/megnor/jstree.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'shop/catalog/view/javascript/megnor/carousel.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'shop/catalog/view/javascript/megnor/megnor.min.js' %}"></script>
+    <script src="{% static 'shop/catalog/view/javascript/megnor/tabs.js' %}" type="text/javascript"></script>
+    <script type="text/javascript" src="{% static 'shop/catalog/view/javascript/megnor/jquery.custom.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'shop/catalog/view/javascript/megnor/scrolltop.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'shop/catalog/view/javascript/megnor/jquery.formalize.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'shop/catalog/view/javascript/megnor/jquery.bxslider.min.js' %}"></script>
+    <!-- Megnor www.templatemela.com - End -->
+    <script src="{% static 'shop/catalog/view/javascript/common.js' %}" type="text/javascript"></script>
+    <script src="{% static 'shop/catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js' %}" type="text/javascript"></script>
 </head>
 
 <body class="common-home layout-1">
-<nav id="top">
-  <div class="container">
-    <div class="pull-left">
-<form action="" method="post" enctype="multipart/form-data" id="currency">
-  <div class="btn-group">
-    <button class="btn btn-link dropdown-toggle currency" data-toggle="dropdown">
-   
-    <span >Currency -</span>
-	                         <strong>$</strong>
-        	
-	 <span class="top_downarrow">&nbsp;</span></button>
-    <ul class="dropdown-menu currency-menu">
-                  <li><button class="currency-select btn btn-link btn-block" type="button" name="EUR">€ Euro</button></li>
-                        <li><button class="currency-select btn btn-link btn-block" type="button" name="GBP">£ Pound Sterling</button></li>
-                        <li><button class="currency-select btn btn-link btn-block" type="button" name="USD">$ US Dollar</button></li>
+    <nav id="top">
+        <div class="container">
+            <div class="pull-left">
+                <form action="" method="post" enctype="multipart/form-data" id="currency">
+                    <div class="btn-group">
+                        <button class="btn btn-link dropdown-toggle currency" data-toggle="dropdown">
+                            <span>Currency -</span>
+                            <strong>$</strong>
+                            <span class="top_downarrow">&nbsp;</span></button>
+                        <ul class="dropdown-menu currency-menu">
+                            <li><button class="currency-select btn btn-link btn-block" type="button" name="EUR">€ Euro</button></li>
+                            <li><button class="currency-select btn btn-link btn-block" type="button" name="GBP">£ Pound Sterling</button></li>
+                            <li><button class="currency-select btn btn-link btn-block" type="button" name="USD">$ US Dollar</button></li>
+                        </ul>
+                    </div>
+                    <input type="hidden" name="code" value="" />
+                    <input type="hidden" name="redirect" value="http://opencart.templatemela.com/OPC07/OPC070165/index.php?route=common/home" />
+                </form>
+            </div>
+            <div class="pull-left">
+                <form action="http://opencart.templatemela.com/OPC07/OPC070165/index.php?route=common/language/language" method="post" enctype="multipart/form-data" id="language">
+                    <div class="btn-group">
+                        <button class="btn btn-link dropdown-toggle language" data-toggle="dropdown">
+                            <span>Language -</span>
+                            <img src="{% static 'shop/image/flags/gb.png' %}" alt="English" title="English">
+                            <span class="top_downarrow">&nbsp;</span></button>
+                        <ul class="dropdown-menu language-menu">
+                            <li><a href="en.html"><img src="{% static 'shop/image/flags/gb.png' %}" alt="English" title="English" /> English</a></li>
+                            <li><a href="ar.html"><img src="{% static 'shop/image/flags/lb.png' %}" alt="Arabic" title="Arabic" /> Arabic</a></li>
+                            <li><a href="cn.html"><img src="{% static 'shop/image/flags/cn.png' %}" alt="Chinese" title="Chinese" /> Chinese</a></li>
+                        </ul>
+                    </div>
+                    <input type="hidden" name="code" value="" />
+                    <input type="hidden" name="redirect" value="" />
+                </form>
+            </div>
+            <div class="tm_headerlinkmenu">
+                <div class="tm_headerlinks_inner">
+                    <div class="headertoggle_img">&nbsp;</div>
+                </div>
+                <ul class="header_links">
+                    <li><a href="{% url 'login' %}">Register</a></li>
+                    <li><a href="#">Login</a></li>
                 </ul>
-  </div>
-  <input type="hidden" name="code" value="" />
-  <input type="hidden" name="redirect" value="http://opencart.templatemela.com/OPC07/OPC070165/index.php?route=common/home" />
-</form>
-</div>
-    <div class="pull-left">
-<form action="http://opencart.templatemela.com/OPC07/OPC070165/index.php?route=common/language/language" method="post" enctype="multipart/form-data" id="language">
-  <div class="btn-group">
-    <button class="btn btn-link dropdown-toggle language" data-toggle="dropdown">
-    <span >Language -</span>
-	         <img src="{% static 'shop/image/flags/gb.png' %}" alt="English" title="English">
-                        	 <span class="top_downarrow">&nbsp;</span></button>
-    <ul class="dropdown-menu language-menu">
-            <li><a href="en.html"><img src="{% static 'shop/image/flags/gb.png' %}" alt="English" title="English" /> English</a></li>
-            <li><a href="ar.html"><img src="{% static 'shop/image/flags/lb.png' %}" alt="Arabic" title="Arabic" /> Arabic</a></li>
-            <li><a href="cn.html"><img src="{% static 'shop/image/flags/cn.png' %}" alt="Chinese" title="Chinese" /> Chinese</a></li>
-          </ul>
-  </div>
-  <input type="hidden" name="code" value="" />
-  <input type="hidden" name="redirect" value="" />
-</form>
-</div>
-	<div class="tm_headerlinkmenu">
-					<div class="tm_headerlinks_inner"><div class="headertoggle_img">&nbsp;</div></div>
-						<ul class="header_links">
-						            <li><a href="index5502.html?route=account/register">Register</a></li>
-            <li><a href="indexe223.html?route=account/login">Login</a></li>
-            						</ul> 
-	</div>
-    <div id="top-links" class="nav pull-right">
-      <ul class="list-inline">
-                <li class="dropdown myaccount"><a href="indexe223.html?route=account/account" title="My Account" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span>My Account</span> <span class="caret"></span></a>
-          <ul class="dropdown-menu dropdown-menu-right myaccount-menu">
-                        <li><a href="index5502.html?route=account/register">Register</a></li>
-            <li><a href="indexe223.html?route=account/login">Login</a></li>
-                      </ul>
-        </li>
-        <li><a href="indexe223.html?route=account/wishlist" id="wishlist-total" title="Wish List (0)"><i class="fa fa-heart"></i> <span>Wish List (0)</span></a></li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-
-<header>
-  <div class="container header">
-    <div class="row">
-	<div class="header-left">
-      <div class="col-sm-4 logo">
-        <div id="logo">
- <a href="#" class="text-white">
-{% comment %} <img src="{% static 'shop/image/catalog/logo.jpg' %}" title="Your Store" alt="Your Store" class="img-responsive" /> {% endcomment %}
-<h2 style="color: yellow; border: 1px solid yellow; padding: 10px;">The Cloud Cart</h2>
-</a>
- </div>
-      </div>
-	  </div>
-	  <div class="header-right">
-	  <div class="content_headercms_top"><div class="phone">
-<div class="icon">&nbsp;</div>
-Call : 12345 678</div> </div>
-		  <div class="col-sm-5 search"><div id="search" class="input-group">
-  <input type="text" name="search" value="" placeholder="Search" class="form-control input-lg" />
-  <span class="input-group-btn">
-    <button type="button" class="btn btn-default btn-lg"></button>
-  </span>
-</div></div>
-		  <div class="col-sm-3 cart"><div id="cart" class="btn-group btn-block">
-  <button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="btn btn-inverse btn-block btn-lg dropdown-toggle"><i class="fa fa-shopping-cart"></i> <span id="cart-total">0 item(s)</span><span class="top_downarrow">&nbsp;</span></button>
-  <ul class="dropdown-menu pull-right cart-menu">
-        <li>
-      <p class="text-center">Your shopping cart is empty!</p>
-    </li>
-      </ul>
-</div>
-</div>
-	  </div>
-    </div>
-  </div>
-</header>
-
-
-
-<nav class="nav-container" role="navigation">
-<div class="nav-inner">
-<!-- ======= Menu Code START ========= -->
-<!-- Opencart 3 level Category Menu-->
-<div class="container">
-<div id="menu" class="main-menu">
-  <ul class="main-navigation">
-   <li class="homeicon"> <a href="#">Home</a></li>
-   		<li>
-			<a href="index98dc.html?route=product/category&amp;path=20" class="subcategory">Electronics</a>
-  			 			   				
-					<div class="categorybg">
-						 <div class="categoryinner">
-        					
-								<ul>
-																								<li class="categorycolumn"><b><a class="submenu1" href="index6dbd.html?route=product/category&amp;path=20_59">Laptops</a></b>
-								  																											<div>
-									  <ul>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="index4796.html?route=product/category&amp;path=20_59_61">Dell</a></li>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="indexb87b.html?route=product/category&amp;path=20_59_62">HP</a></li>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="index178a.html?route=product/category&amp;path=20_59_63">Mice and Trackballs</a></li>
-										 									  </ul>
-									</div>
-																	</li>
-								
-																<li class="categorycolumn"><b><a class="submenu1" href="indexf345.html?route=product/category&amp;path=20_27">Tablates</a></b>
-								  																											<div>
-									  <ul>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="index59be.html?route=product/category&amp;path=20_27_64">Htc</a></li>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="indexa5b0.html?route=product/category&amp;path=20_27_66">Sony</a></li>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="indexa900.html?route=product/category&amp;path=20_27_65">Samsung</a></li>
-										 									  </ul>
-									</div>
-																	</li>
-								
-																<li class="categorycolumn"><b><a class="submenu1" href="indexd9fe.html?route=product/category&amp;path=20_26">PC</a></b>
-								  																											<div>
-									  <ul>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="indexccf3.html?route=product/category&amp;path=20_26_67">Dell</a></li>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="index8519.html?route=product/category&amp;path=20_26_68">HP</a></li>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="index7817.html?route=product/category&amp;path=20_26_69">Samsung</a></li>
-										 									  </ul>
-									</div>
-																	</li>
-								
-																
-								</ul>
-								
-				
-		
-							
-						</div>
-					</div>
-				
-					  				<li>
-			<a href="index7fa3.html?route=product/category&amp;path=18" class="subcategory">Parts &amp; Accessories</a>
-  			 			   				
-					<div class="categorybg">
-						 <div class="categoryinner">
-        					
-								<ul>
-																								<li class="categorycolumn"><b><a class="submenu1" href="index9f41.html?route=product/category&amp;path=18_46">Spectacles</a></b>
-								  																											<div>
-									  <ul>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="indexfec2.html?route=product/category&amp;path=18_46_70">CCTV Camear</a></li>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="index679a.html?route=product/category&amp;path=18_46_71">Mobile</a></li>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="index1470.html?route=product/category&amp;path=18_46_72">Web Camera</a></li>
-										 									  </ul>
-									</div>
-																	</li>
-								
-																<li class="categorycolumn"><b><a class="submenu1" href="index8470.html?route=product/category&amp;path=18_45">Watches</a></b>
-								  																											<div>
-									  <ul>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="index4590.html?route=product/category&amp;path=18_45_73">Fast Tracks</a></li>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="index49c7.html?route=product/category&amp;path=18_45_74">Timex</a></li>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="index22a7.html?route=product/category&amp;path=18_45_75">Titan</a></li>
-										 									  </ul>
-									</div>
-																	</li>
-								
-																<li class="categorycolumn"><b><a class="submenu1" href="indexf68c.html?route=product/category&amp;path=18_60">Printers</a></b>
-								  																											<div>
-									  <ul>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="indexb661.html?route=product/category&amp;path=18_60_78">Canon</a></li>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="indexdb9d.html?route=product/category&amp;path=18_60_79">HP</a></li>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="index7bcb.html?route=product/category&amp;path=18_60_76">Brother</a></li>
-										 									  </ul>
-									</div>
-																	</li>
-								
-																
-								</ul>
-								
-				
-		
-							
-						</div>
-					</div>
-				
-					  				<li>
-			<a href="index1647.html?route=product/category&amp;path=25" class="subcategory">Components</a>
-  			 			   				
-					<div class="categorybg">
-						 <div class="categoryinner">
-        					
-								<ul>
-																								<li class="categorycolumn"><b><a class="submenu1" href="indexc219.html?route=product/category&amp;path=25_29">Moniters</a></b>
-								  																											<div>
-									  <ul>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="indexa57d.html?route=product/category&amp;path=25_29_81">CRT</a></li>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="indexc738.html?route=product/category&amp;path=25_29_82">LCD</a></li>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="indexaaf1.html?route=product/category&amp;path=25_29_83">LED</a></li>
-										 									  </ul>
-									</div>
-																	</li>
-								
-																<li class="categorycolumn"><b><a class="submenu1" href="indexf3db.html?route=product/category&amp;path=25_31">Scanners</a></b>
-								  																											<div>
-									  <ul>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="indexd6ad.html?route=product/category&amp;path=25_31_84">Brother</a></li>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="index9c01.html?route=product/category&amp;path=25_31_85">HP</a></li>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="index58d8.html?route=product/category&amp;path=25_31_86">Ink jet</a></li>
-										 									  </ul>
-									</div>
-																	</li>
-								
-																<li class="categorycolumn"><b><a class="submenu1" href="index955a.html?route=product/category&amp;path=25_32">Mac</a></b>
-								  																											<div>
-									  <ul>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="indexa3c7.html?route=product/category&amp;path=25_32_87">imac</a></li>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="index8cbd.html?route=product/category&amp;path=25_32_88">iphone</a></li>
-										 										 <li style="padding-right:6px;"><a class="submenu2" href="index379b.html?route=product/category&amp;path=25_32_89">Ipod</a></li>
-										 									  </ul>
-									</div>
-																	</li>
-								
-																
-								</ul>
-								
-				
-		
-							
-						</div>
-					</div>
-				
-					  				<li>
-			<a href="indexb152.html?route=product/category&amp;path=17" class="single">Fashion</a>
-  			 	  				<li>
-			<a href="indexc957.html?route=product/category&amp;path=24" class="single">Interiors</a>
-  			 	  				<li>
-			<a href="index68ea.html?route=product/category&amp;path=33" class="single">Kitchen</a>
-  			 	  				<li>
-			<a href="index460c.html?route=product/category&amp;path=80" class="single">House Holds</a>
-  			 	  			  	</li>
-		
-		
-		   
-   
-   
-   
-  </ul>
-</div>
-<!-- ======= Menu Code END ========= -->
-</div>
-</div>
-<div id="res-menu" class="main-menu nav-container1">
-<div class="res-menu-inner">
-<div class="container res-menu">
-	<div class="nav-responsive"><span>Menu</span><div class="expandable"></div></div>
-     <ul class="main-navigation">
-          <li><a href="index98dc.html?route=product/category&amp;path=20">Electronics</a>
-      
-                <ul>
-                              										
-				<li>
-									<a href="index6dbd.html?route=product/category&amp;path=20_59" class="activSub" >Laptops</a> 					
-				
-												<ul>
-									<li><a href="index4796.html?route=product/category&amp;path=20_59_61"  >Dell</a></li>
-				 					<li><a href="indexb87b.html?route=product/category&amp;path=20_59_62"  >HP</a></li>
-				 					<li><a href="index178a.html?route=product/category&amp;path=20_59_63"  >Mice and Trackballs</a></li>
-				 				</ul>
-							  		  
-			</li>		
-                              										
-				<li>
-									<a href="indexf345.html?route=product/category&amp;path=20_27" class="activSub" >Tablates</a> 					
-				
-												<ul>
-									<li><a href="index59be.html?route=product/category&amp;path=20_27_64"  >Htc</a></li>
-				 					<li><a href="indexa5b0.html?route=product/category&amp;path=20_27_66"  >Sony</a></li>
-				 					<li><a href="indexa900.html?route=product/category&amp;path=20_27_65"  >Samsung</a></li>
-				 				</ul>
-							  		  
-			</li>		
-                              										
-				<li>
-									<a href="indexd9fe.html?route=product/category&amp;path=20_26" class="activSub" >PC</a> 					
-				
-												<ul>
-									<li><a href="indexccf3.html?route=product/category&amp;path=20_26_67"  >Dell</a></li>
-				 					<li><a href="index8519.html?route=product/category&amp;path=20_26_68"  >HP</a></li>
-				 					<li><a href="index7817.html?route=product/category&amp;path=20_26_69"  >Samsung</a></li>
-				 				</ul>
-							  		  
-			</li>		
+            </div>
+            <div id="top-links" class="nav pull-right">
+                <ul class="list-inline">
+                    <li class="dropdown myaccount"><a href="indexe223.html?route=account/account" title="My Account" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span>My Account</span> <span class="caret"></span></a>
+                        {% if user.is_authenticated %}
+                        <ul class="dropdown-menu dropdown-menu-right myaccount-menu">
+                            <p class="text-success">Hi,
+                                {{user.username}}</p>
+                            <li>
+                                <a class="btn" href="{% url 'logout' %}">Logout</a>
+                            </li>
+                            <li>
+                                <a class="btn" href="{% url 'password_reset' %}">Reset Password</a>
+                            </li>
+                        </ul>
+                        {% else %}
+                        <ul class="dropdown-menu dropdown-menu-right myaccount-menu">
+                            <li>
+                            <a class="btn" href="{% url 'signup' %}">Sign Up</a></li>
+                            <li><a class="btn" href="{% url 'login' %}">Login</a></li>
+                        </ul>
+                        {% endif %}
+                    </li>
+                    <li><a href="indexe223.html?route=account/wishlist" id="wishlist-total" title="Wish List (0)"><i class="fa fa-heart"></i> <span>Wish List (0)</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container header">
+            <div class="row">
+                <div class="header-left">
+                    <div class="col-sm-4 logo">
+                        <div id="logo">
+                            <a href="#" class="text-white">
+                                {% comment %} <img src="{% static 'shop/image/catalog/logo.jpg' %}" title="Your Store" alt="Your Store" class="img-responsive" /> {% endcomment %}
+                                <h2 style="color: yellow; border: 1px solid yellow; padding: 10px;">The Cloud Cart</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="content_headercms_top">
+                        <div class="phone">
+                            <div class="icon">&nbsp;</div>
+                            Call : 12345 678
+                        </div>
+                    </div>
+                    <div class="col-sm-5 search">
+                        <div id="search" class="input-group">
+                            <input type="text" name="search" value="" placeholder="Search" class="form-control input-lg" />
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-lg"></button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 cart">
+                        <div id="cart" class="btn-group btn-block">
+                            <button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="btn btn-inverse btn-block btn-lg dropdown-toggle"><i class="fa fa-shopping-cart"></i> <span id="cart-total">0 item(s)</span><span class="top_downarrow">&nbsp;</span></button>
+                            <ul class="dropdown-menu pull-right cart-menu">
+                                <li>
+                                    <p class="text-center">Your shopping cart is empty!</p>
+                                </li>
                             </ul>
-        
-          </li>
-        <li><a href="index7fa3.html?route=product/category&amp;path=18">Parts &amp; Accessories</a>
-      
-                <ul>
-                              										
-				<li>
-									<a href="index9f41.html?route=product/category&amp;path=18_46" class="activSub" >Spectacles</a> 					
-				
-												<ul>
-									<li><a href="indexfec2.html?route=product/category&amp;path=18_46_70"  >CCTV Camear</a></li>
-				 					<li><a href="index679a.html?route=product/category&amp;path=18_46_71"  >Mobile</a></li>
-				 					<li><a href="index1470.html?route=product/category&amp;path=18_46_72"  >Web Camera</a></li>
-				 				</ul>
-							  		  
-			</li>		
-                              										
-				<li>
-									<a href="index8470.html?route=product/category&amp;path=18_45" class="activSub" >Watches</a> 					
-				
-												<ul>
-									<li><a href="index4590.html?route=product/category&amp;path=18_45_73"  >Fast Tracks</a></li>
-				 					<li><a href="index49c7.html?route=product/category&amp;path=18_45_74"  >Timex</a></li>
-				 					<li><a href="index22a7.html?route=product/category&amp;path=18_45_75"  >Titan</a></li>
-				 				</ul>
-							  		  
-			</li>		
-                              										
-				<li>
-									<a href="indexf68c.html?route=product/category&amp;path=18_60" class="activSub" >Printers</a> 					
-				
-												<ul>
-									<li><a href="indexb661.html?route=product/category&amp;path=18_60_78"  >Canon</a></li>
-				 					<li><a href="indexdb9d.html?route=product/category&amp;path=18_60_79"  >HP</a></li>
-				 					<li><a href="index7bcb.html?route=product/category&amp;path=18_60_76"  >Brother</a></li>
-				 				</ul>
-							  		  
-			</li>		
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="nav-container" role="navigation">
+        <div class="nav-inner">
+            <!-- ======= Menu Code START ========= -->
+            <!-- Opencart 3 level Category Menu-->
+            <div class="container">
+                <div id="menu" class="main-menu">
+                    <ul class="main-navigation">
+                        <li class="homeicon"> <a href="#">Home</a></li>
+                        <li>
+                            <a href="index98dc.html?route=product/category&amp;path=20" class="subcategory">Electronics</a>
+                            <div class="categorybg">
+                                <div class="categoryinner">
+                                    <ul>
+                                        <li class="categorycolumn"><b><a class="submenu1" href="index6dbd.html?route=product/category&amp;path=20_59">Laptops</a></b>
+                                            <div>
+                                                <ul>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="index4796.html?route=product/category&amp;path=20_59_61">Dell</a></li>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="indexb87b.html?route=product/category&amp;path=20_59_62">HP</a></li>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="index178a.html?route=product/category&amp;path=20_59_63">Mice and Trackballs</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="categorycolumn"><b><a class="submenu1" href="indexf345.html?route=product/category&amp;path=20_27">Tablates</a></b>
+                                            <div>
+                                                <ul>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="index59be.html?route=product/category&amp;path=20_27_64">Htc</a></li>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="indexa5b0.html?route=product/category&amp;path=20_27_66">Sony</a></li>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="indexa900.html?route=product/category&amp;path=20_27_65">Samsung</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="categorycolumn"><b><a class="submenu1" href="indexd9fe.html?route=product/category&amp;path=20_26">PC</a></b>
+                                            <div>
+                                                <ul>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="indexccf3.html?route=product/category&amp;path=20_26_67">Dell</a></li>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="index8519.html?route=product/category&amp;path=20_26_68">HP</a></li>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="index7817.html?route=product/category&amp;path=20_26_69">Samsung</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <li>
+                            <a href="index7fa3.html?route=product/category&amp;path=18" class="subcategory">Parts &amp; Accessories</a>
+                            <div class="categorybg">
+                                <div class="categoryinner">
+                                    <ul>
+                                        <li class="categorycolumn"><b><a class="submenu1" href="index9f41.html?route=product/category&amp;path=18_46">Spectacles</a></b>
+                                            <div>
+                                                <ul>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="indexfec2.html?route=product/category&amp;path=18_46_70">CCTV Camear</a></li>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="index679a.html?route=product/category&amp;path=18_46_71">Mobile</a></li>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="index1470.html?route=product/category&amp;path=18_46_72">Web Camera</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="categorycolumn"><b><a class="submenu1" href="index8470.html?route=product/category&amp;path=18_45">Watches</a></b>
+                                            <div>
+                                                <ul>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="index4590.html?route=product/category&amp;path=18_45_73">Fast Tracks</a></li>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="index49c7.html?route=product/category&amp;path=18_45_74">Timex</a></li>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="index22a7.html?route=product/category&amp;path=18_45_75">Titan</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="categorycolumn"><b><a class="submenu1" href="indexf68c.html?route=product/category&amp;path=18_60">Printers</a></b>
+                                            <div>
+                                                <ul>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="indexb661.html?route=product/category&amp;path=18_60_78">Canon</a></li>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="indexdb9d.html?route=product/category&amp;path=18_60_79">HP</a></li>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="index7bcb.html?route=product/category&amp;path=18_60_76">Brother</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <li>
+                            <a href="index1647.html?route=product/category&amp;path=25" class="subcategory">Components</a>
+                            <div class="categorybg">
+                                <div class="categoryinner">
+                                    <ul>
+                                        <li class="categorycolumn"><b><a class="submenu1" href="indexc219.html?route=product/category&amp;path=25_29">Moniters</a></b>
+                                            <div>
+                                                <ul>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="indexa57d.html?route=product/category&amp;path=25_29_81">CRT</a></li>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="indexc738.html?route=product/category&amp;path=25_29_82">LCD</a></li>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="indexaaf1.html?route=product/category&amp;path=25_29_83">LED</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="categorycolumn"><b><a class="submenu1" href="indexf3db.html?route=product/category&amp;path=25_31">Scanners</a></b>
+                                            <div>
+                                                <ul>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="indexd6ad.html?route=product/category&amp;path=25_31_84">Brother</a></li>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="index9c01.html?route=product/category&amp;path=25_31_85">HP</a></li>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="index58d8.html?route=product/category&amp;path=25_31_86">Ink jet</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="categorycolumn"><b><a class="submenu1" href="index955a.html?route=product/category&amp;path=25_32">Mac</a></b>
+                                            <div>
+                                                <ul>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="indexa3c7.html?route=product/category&amp;path=25_32_87">imac</a></li>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="index8cbd.html?route=product/category&amp;path=25_32_88">iphone</a></li>
+                                                    <li style="padding-right:6px;"><a class="submenu2" href="index379b.html?route=product/category&amp;path=25_32_89">Ipod</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <li>
+                            <a href="indexb152.html?route=product/category&amp;path=17" class="single">Fashion</a>
+                        <li>
+                            <a href="indexc957.html?route=product/category&amp;path=24" class="single">Interiors</a>
+                        <li>
+                            <a href="index68ea.html?route=product/category&amp;path=33" class="single">Kitchen</a>
+                        <li>
+                            <a href="index460c.html?route=product/category&amp;path=80" class="single">House Holds</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ======= Menu Code END ========= -->
+            </div>
+        </div>
+        <div id="res-menu" class="main-menu nav-container1">
+            <div class="res-menu-inner">
+                <div class="container res-menu">
+                    <div class="nav-responsive"><span>Menu</span>
+                        <div class="expandable"></div>
+                    </div>
+                    <ul class="main-navigation">
+                        <li><a href="index98dc.html?route=product/category&amp;path=20">Electronics</a>
+                            <ul>
+                                <li>
+                                    <a href="index6dbd.html?route=product/category&amp;path=20_59" class="activSub">Laptops</a>
+                                    <ul>
+                                        <li><a href="index4796.html?route=product/category&amp;path=20_59_61">Dell</a></li>
+                                        <li><a href="indexb87b.html?route=product/category&amp;path=20_59_62">HP</a></li>
+                                        <li><a href="index178a.html?route=product/category&amp;path=20_59_63">Mice and Trackballs</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="indexf345.html?route=product/category&amp;path=20_27" class="activSub">Tablates</a>
+                                    <ul>
+                                        <li><a href="index59be.html?route=product/category&amp;path=20_27_64">Htc</a></li>
+                                        <li><a href="indexa5b0.html?route=product/category&amp;path=20_27_66">Sony</a></li>
+                                        <li><a href="indexa900.html?route=product/category&amp;path=20_27_65">Samsung</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="indexd9fe.html?route=product/category&amp;path=20_26" class="activSub">PC</a>
+                                    <ul>
+                                        <li><a href="indexccf3.html?route=product/category&amp;path=20_26_67">Dell</a></li>
+                                        <li><a href="index8519.html?route=product/category&amp;path=20_26_68">HP</a></li>
+                                        <li><a href="index7817.html?route=product/category&amp;path=20_26_69">Samsung</a></li>
+                                    </ul>
+                                </li>
                             </ul>
-        
-          </li>
-        <li><a href="index1647.html?route=product/category&amp;path=25">Components</a>
-      
-                <ul>
-                              										
-				<li>
-									<a href="indexc219.html?route=product/category&amp;path=25_29" class="activSub" >Moniters</a> 					
-				
-												<ul>
-									<li><a href="indexa57d.html?route=product/category&amp;path=25_29_81"  >CRT</a></li>
-				 					<li><a href="indexc738.html?route=product/category&amp;path=25_29_82"  >LCD</a></li>
-				 					<li><a href="indexaaf1.html?route=product/category&amp;path=25_29_83"  >LED</a></li>
-				 				</ul>
-							  		  
-			</li>		
-                              										
-				<li>
-									<a href="indexf3db.html?route=product/category&amp;path=25_31" class="activSub" >Scanners</a> 					
-				
-												<ul>
-									<li><a href="indexd6ad.html?route=product/category&amp;path=25_31_84"  >Brother</a></li>
-				 					<li><a href="index9c01.html?route=product/category&amp;path=25_31_85"  >HP</a></li>
-				 					<li><a href="index58d8.html?route=product/category&amp;path=25_31_86"  >Ink jet</a></li>
-				 				</ul>
-							  		  
-			</li>		
-                              										
-				<li>
-									<a href="index955a.html?route=product/category&amp;path=25_32" class="activSub" >Mac</a> 					
-				
-												<ul>
-									<li><a href="indexa3c7.html?route=product/category&amp;path=25_32_87"  >imac</a></li>
-				 					<li><a href="index8cbd.html?route=product/category&amp;path=25_32_88"  >iphone</a></li>
-				 					<li><a href="index379b.html?route=product/category&amp;path=25_32_89"  >Ipod</a></li>
-				 				</ul>
-							  		  
-			</li>		
+                        </li>
+                        <li><a href="index7fa3.html?route=product/category&amp;path=18">Parts &amp; Accessories</a>
+                            <ul>
+                                <li>
+                                    <a href="index9f41.html?route=product/category&amp;path=18_46" class="activSub">Spectacles</a>
+                                    <ul>
+                                        <li><a href="indexfec2.html?route=product/category&amp;path=18_46_70">CCTV Camear</a></li>
+                                        <li><a href="index679a.html?route=product/category&amp;path=18_46_71">Mobile</a></li>
+                                        <li><a href="index1470.html?route=product/category&amp;path=18_46_72">Web Camera</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="index8470.html?route=product/category&amp;path=18_45" class="activSub">Watches</a>
+                                    <ul>
+                                        <li><a href="index4590.html?route=product/category&amp;path=18_45_73">Fast Tracks</a></li>
+                                        <li><a href="index49c7.html?route=product/category&amp;path=18_45_74">Timex</a></li>
+                                        <li><a href="index22a7.html?route=product/category&amp;path=18_45_75">Titan</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="indexf68c.html?route=product/category&amp;path=18_60" class="activSub">Printers</a>
+                                    <ul>
+                                        <li><a href="indexb661.html?route=product/category&amp;path=18_60_78">Canon</a></li>
+                                        <li><a href="indexdb9d.html?route=product/category&amp;path=18_60_79">HP</a></li>
+                                        <li><a href="index7bcb.html?route=product/category&amp;path=18_60_76">Brother</a></li>
+                                    </ul>
+                                </li>
                             </ul>
-        
-          </li>
-        <li><a href="indexb152.html?route=product/category&amp;path=17">Fashion</a>
-          </li>
-        <li><a href="indexc957.html?route=product/category&amp;path=24">Interiors</a>
-          </li>
-        <li><a href="index68ea.html?route=product/category&amp;path=33">Kitchen</a>
-          </li>
-        <li><a href="index460c.html?route=product/category&amp;path=80">House Holds</a>
-          </li>
-        </ul>
-	</div>
-</div>
-
-</div> 
-<div class="content_headercms_bottom"><div class="special_navigation"><div class="spec_navigation"><div class="navigation_label"><img alt="" src="image/catalog/weekly_special.png" style="width: 202px; height: 20px;"></div><div class="navigation_links"><ul><li><a href="#">Samsung Galaxy S3</a></li><li><a href="#">Nokia Lumia 925</a></li><li><a href="#">Xolo Q700</a></li><li class="last"><a href="#">iPhone 5s</a></li></ul></div><div class="all_cate"><span><a href="#">See all &gt;</a></span></div></div></div> </div>
-</nav> 
-
-{% block body %}
-{% endblock %}
-
-<footer>
-
-  <div id="footer" class="container">
-     <div class="row">
-			<div class="footer_link_left">
-				<div class="column">
-					<div class="content_footercms_left "><div class="footer_link_quick column">
-<h5>Quick Go</h5>
-
-
-<ul>
-
-
-<li>
-<div class="img img1">&nbsp;</div>
-
-
-<a href="#">Computer</a></li>
-
-
-<li>
-<div class="img img2">&nbsp;</div>
-
-
-<a href="#">Mobile</a></li>
-
-
-<li>
-<div class="img img3">&nbsp;</div>
-
-
-<a href="#">Washing Machine</a></li>
-
-
-<li>
-<div class="img img4">&nbsp;</div>
-
-
-<a href="#">Game</a></li>
-
-
-<li>
-<div class="img img5">&nbsp;</div>
-
-
-<a href="#">Referegirator</a></li>
-
-
-</ul>
-
-
-</div> </div>
-				</div>
-			</div>
-			<div class="footer_link_center">
-				  				  <div class=" column">
-					<h5>Information</h5>
-					<ul class="list-unstyled">
-					  					  <li><a href="index8816.html?route=information/information&amp;information_id=4">About Us</a></li>
-					  					  <li><a href="index1766.html?route=information/information&amp;information_id=6">Delivery Information</a></li>
-					  					  <li><a href="index1679.html?route=information/information&amp;information_id=3">Privacy Policy</a></li>
-					  					  <li><a href="index99e4.html?route=information/information&amp;information_id=5">Terms &amp; Conditions</a></li>
-					  					</ul>
-				  </div>
-				  				  
-				  
-				  <div class="column">
-					<h5>Extras</h5>
-					<ul class="list-unstyled">
-					  <li><a href="indexd773.html?route=product/manufacturer">Brands</a></li>
-					  <li><a href="index4dd2.html?route=account/voucher">Gift Vouchers</a></li>
-					  <li><a href="index3d18.html?route=affiliate/account">Affiliates</a></li>
-					  <li><a href="indexf110.html?route=product/special">Specials</a></li>
-					</ul>
-				  </div>  
-				  
-				  <div class="column">
-					<h5>Customer Service</h5>
-					<ul class="list-unstyled">
-					  <li><a href="index2724.html?route=information/contact">Contact Us</a></li>
-					  <li><a href="index71ba.html?route=account/return/add">Returns</a></li>
-					  <li><a href="index7cb2.html?route=information/sitemap">Site Map</a></li>
-					</ul>
-				  </div>
-			 
-				  <div class="column">
-					<h5>My Account</h5>
-					<ul class="list-unstyled">
-					  <li><a href="indexe223.html?route=account/account">My Account</a></li>
-					  <li><a href="indexe223.html?route=account/order">Order History</a></li>
-					  <li><a href="indexe223.html?route=account/wishlist">Wish List</a></li>
-					  <li><a href="indexe223.html?route=account/newsletter">Newsletter</a></li>
-					</ul>
-				  </div>
-				</div>
-				
-			<div class="footer_link_right">
-					<div class="content_footercms_right "><div class="footerright">
-	<div class="footer_link_policies column">
-		<h5>policies</h5>
-
-
-
-
-
-			<ul>
-
-
-	<li><a href="#">Delivery Information</a></li>
-
-
-	<li><a href="#">Track My Order</a></li>
-
-
-	<li><a href="#">Installation Service</a></li>
-
-
-	<li><a href="#">Registration Policy</a></li>
-
-
-	<li><a href="#">Terms &amp; conditions</a></li>
-
-
-	<li><a href="#">Installaion</a></li>
-
-
-	<li><a href="#">Product Information</a></li>
-
-
-	<li><a href="#">Track your account</a></li>
-
-
-	<li><a href="#">Policy Status</a></li>
-
-
-	<li><a href="#">Deletion Policy</a></li>
-
-
-</ul>
-
-
-
-	</div>
-
-
-
-
-
-	<div class="footer_link_help column">
-		<h5>How can we help you?</h5>
-
-
-
-
-
-			<ul>
-
-
-
-	<li><a href="#">Client Response</a></li>
-
-
-
-	<li><a href="#">Order Delivery</a></li>
-
-
-
-	<li><a href="#">Product Returns</a></li>
-
-
-
-	<li><a href="#">Replacement Guarantee</a></li>
-
-
-
-	<li><a href="#">Order Status</a></li>
-
-
-
-	<li><a href="#">Reorder Service</a></li>
-
-
-
-	<li><a href="#">Product Maintenance</a></li>
-
-
-
-	<li><a href="#">Home Delivery</a></li>
-
-
-
-	<li><a href="#">Security Service</a></li>
-
-
-
-	<li><a href="#">Discount Related</a></li>
-
-
-
-</ul>
-
-
-
-
-	</div>
-
-
-
-
-
-</div> </div>
-			</div>
-    </div>
-	 </div>
-   <div class="footer-bottom">
-   		<div class="footer-bottominner">
-   			<div class="footer-link">
-				<ul>
-					<li class="first"><a href="indexf110.html?route=product/special">Specials</a></li>
-					<li><a href="index3d18.html?route=affiliate/account">Affiliates</a></li>
-					<li><a href="index4dd2.html?route=account/voucher">Gift Vouchers</a></li>
-					<li><a href="indexd773.html?route=product/manufacturer">Brands</a></li>
-					<li><a href="index71ba.html?route=account/return/add">Returns</a></li>
-					<li><a href="index7cb2.html?route=information/sitemap">Site Map</a></li>
-					<li class="last"><a href="index2724.html?route=information/contact">Contact Us</a></li>
-				</ul>
-  		 </div>
-   		
-	<div id="powered" >Powered By <a href="http://www.opencart.com/">TheCloudCart</a> &copy; 2019</div>
-	<div class="content_footercms_bottom "><div class="social-block"><ul><li class="facebook"><a href="#">facebook</a></li><li class="twitter"><a href="#">twitter</a></li><li class="youtube"><a href="#">youtube</a></li><li class="gmail"><a href="#">gmail</a></li><li class="gribble"><a href="#">gribble</a></li></ul></div><div class="payment_block"><ul> <li><a href="#"><img alt="" src="image/catalog/logo_paiement_visa.png"></a></li><li><a href="#"><img alt="" src="image/catalog/logo_paiement_mastercard.png"></a></li><li><a href="#"><img alt="" src="image/catalog/logo_paiement_paypal.png"></a></li></ul></div> </div>
-	</div>
- </div>
-</footer>
-<span class="testimonial_default_width" style="display: none; visibility: hidden;"></span>
+                        </li>
+                        <li><a href="index1647.html?route=product/category&amp;path=25">Components</a>
+                            <ul>
+                                <li>
+                                    <a href="indexc219.html?route=product/category&amp;path=25_29" class="activSub">Moniters</a>
+                                    <ul>
+                                        <li><a href="indexa57d.html?route=product/category&amp;path=25_29_81">CRT</a></li>
+                                        <li><a href="indexc738.html?route=product/category&amp;path=25_29_82">LCD</a></li>
+                                        <li><a href="indexaaf1.html?route=product/category&amp;path=25_29_83">LED</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="indexf3db.html?route=product/category&amp;path=25_31" class="activSub">Scanners</a>
+                                    <ul>
+                                        <li><a href="indexd6ad.html?route=product/category&amp;path=25_31_84">Brother</a></li>
+                                        <li><a href="index9c01.html?route=product/category&amp;path=25_31_85">HP</a></li>
+                                        <li><a href="index58d8.html?route=product/category&amp;path=25_31_86">Ink jet</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="index955a.html?route=product/category&amp;path=25_32" class="activSub">Mac</a>
+                                    <ul>
+                                        <li><a href="indexa3c7.html?route=product/category&amp;path=25_32_87">imac</a></li>
+                                        <li><a href="index8cbd.html?route=product/category&amp;path=25_32_88">iphone</a></li>
+                                        <li><a href="index379b.html?route=product/category&amp;path=25_32_89">Ipod</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="indexb152.html?route=product/category&amp;path=17">Fashion</a>
+                        </li>
+                        <li><a href="indexc957.html?route=product/category&amp;path=24">Interiors</a>
+                        </li>
+                        <li><a href="index68ea.html?route=product/category&amp;path=33">Kitchen</a>
+                        </li>
+                        <li><a href="index460c.html?route=product/category&amp;path=80">House Holds</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content_headercms_bottom">
+            <div class="special_navigation">
+                <div class="spec_navigation">
+                    <div class="navigation_label"><img alt="" src="image/catalog/weekly_special.png" style="width: 202px; height: 20px;"></div>
+                    <div class="navigation_links">
+                        <ul>
+                            <li><a href="#">Samsung Galaxy S3</a></li>
+                            <li><a href="#">Nokia Lumia 925</a></li>
+                            <li><a href="#">Xolo Q700</a></li>
+                            <li class="last"><a href="#">iPhone 5s</a></li>
+                        </ul>
+                    </div>
+                    <div class="all_cate"><span><a href="#">See all &gt;</a></span></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    {% block body %}
+    {% endblock %}
+    <footer>
+        <div id="footer" class="container">
+            <div class="row">
+                <div class="footer_link_left">
+                    <div class="column">
+                        <div class="content_footercms_left ">
+                            <div class="footer_link_quick column">
+                                <h5>Quick Go</h5>
+                                <ul>
+                                    <li>
+                                        <div class="img img1">&nbsp;</div>
+                                        <a href="#">Computer</a>
+                                    </li>
+                                    <li>
+                                        <div class="img img2">&nbsp;</div>
+                                        <a href="#">Mobile</a>
+                                    </li>
+                                    <li>
+                                        <div class="img img3">&nbsp;</div>
+                                        <a href="#">Washing Machine</a>
+                                    </li>
+                                    <li>
+                                        <div class="img img4">&nbsp;</div>
+                                        <a href="#">Game</a>
+                                    </li>
+                                    <li>
+                                        <div class="img img5">&nbsp;</div>
+                                        <a href="#">Referegirator</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_link_center">
+                    <div class=" column">
+                        <h5>Information</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index8816.html?route=information/information&amp;information_id=4">About Us</a></li>
+                            <li><a href="index1766.html?route=information/information&amp;information_id=6">Delivery Information</a></li>
+                            <li><a href="index1679.html?route=information/information&amp;information_id=3">Privacy Policy</a></li>
+                            <li><a href="index99e4.html?route=information/information&amp;information_id=5">Terms &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h5>Extras</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="indexd773.html?route=product/manufacturer">Brands</a></li>
+                            <li><a href="index4dd2.html?route=account/voucher">Gift Vouchers</a></li>
+                            <li><a href="index3d18.html?route=affiliate/account">Affiliates</a></li>
+                            <li><a href="indexf110.html?route=product/special">Specials</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h5>Customer Service</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index2724.html?route=information/contact">Contact Us</a></li>
+                            <li><a href="index71ba.html?route=account/return/add">Returns</a></li>
+                            <li><a href="index7cb2.html?route=information/sitemap">Site Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h5>My Account</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="indexe223.html?route=account/account">My Account</a></li>
+                            <li><a href="indexe223.html?route=account/order">Order History</a></li>
+                            <li><a href="indexe223.html?route=account/wishlist">Wish List</a></li>
+                            <li><a href="indexe223.html?route=account/newsletter">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_link_right">
+                    <div class="content_footercms_right ">
+                        <div class="footerright">
+                            <div class="footer_link_policies column">
+                                <h5>policies</h5>
+                                <ul>
+                                    <li><a href="#">Delivery Information</a></li>
+                                    <li><a href="#">Track My Order</a></li>
+                                    <li><a href="#">Installation Service</a></li>
+                                    <li><a href="#">Registration Policy</a></li>
+                                    <li><a href="#">Terms &amp; conditions</a></li>
+                                    <li><a href="#">Installaion</a></li>
+                                    <li><a href="#">Product Information</a></li>
+                                    <li><a href="#">Track your account</a></li>
+                                    <li><a href="#">Policy Status</a></li>
+                                    <li><a href="#">Deletion Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer_link_help column">
+                                <h5>How can we help you?</h5>
+                                <ul>
+                                    <li><a href="#">Client Response</a></li>
+                                    <li><a href="#">Order Delivery</a></li>
+                                    <li><a href="#">Product Returns</a></li>
+                                    <li><a href="#">Replacement Guarantee</a></li>
+                                    <li><a href="#">Order Status</a></li>
+                                    <li><a href="#">Reorder Service</a></li>
+                                    <li><a href="#">Product Maintenance</a></li>
+                                    <li><a href="#">Home Delivery</a></li>
+                                    <li><a href="#">Security Service</a></li>
+                                    <li><a href="#">Discount Related</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottominner">
+                <div class="footer-link">
+                    <ul>
+                        <li class="first"><a href="indexf110.html?route=product/special">Specials</a></li>
+                        <li><a href="index3d18.html?route=affiliate/account">Affiliates</a></li>
+                        <li><a href="index4dd2.html?route=account/voucher">Gift Vouchers</a></li>
+                        <li><a href="indexd773.html?route=product/manufacturer">Brands</a></li>
+                        <li><a href="index71ba.html?route=account/return/add">Returns</a></li>
+                        <li><a href="index7cb2.html?route=information/sitemap">Site Map</a></li>
+                        <li class="last"><a href="index2724.html?route=information/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div id="powered">Powered By <a href="http://www.opencart.com/">TheCloudCart</a> &copy; 2019</div>
+                <div class="content_footercms_bottom ">
+                    <div class="social-block">
+                        <ul>
+                            <li class="facebook"><a href="#">facebook</a></li>
+                            <li class="twitter"><a href="#">twitter</a></li>
+                            <li class="youtube"><a href="#">youtube</a></li>
+                            <li class="gmail"><a href="#">gmail</a></li>
+                            <li class="gribble"><a href="#">gribble</a></li>
+                        </ul>
+                    </div>
+                    <div class="payment_block">
+                        <ul>
+                            <li><a href="#"><img alt="" src="image/catalog/logo_paiement_visa.png"></a></li>
+                            <li><a href="#"><img alt="" src="image/catalog/logo_paiement_mastercard.png"></a></li>
+                            <li><a href="#"><img alt="" src="image/catalog/logo_paiement_paypal.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <span class="testimonial_default_width" style="display: none; visibility: hidden;"></span>
 </body>
 
 </html>
-
-
-
-
