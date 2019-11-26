@@ -26,7 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'shop.apps.ShopConfig',
-    'accounts.apps.AccountsConfig', 
+    # 'accounts.apps.AccountsConfig', 
     'users.apps.UsersConfig', 
     'crispy_forms',
 ]
@@ -70,8 +70,12 @@ WSGI_APPLICATION = 'thecloudcart.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dbo36ov07asl9l',
+        'USER': 'kveokxudpgmdzl',
+        'PASSWORD': '4f478405f5cddb93c3b92845c794d81dd58fd178988bf7006f3f23883cdf13b7',
+        'HOST': 'ec2-54-235-89-123.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
