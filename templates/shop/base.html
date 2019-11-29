@@ -77,7 +77,7 @@
                     <div class="headertoggle_img">&nbsp;</div>
                 </div>
                 <ul class="header_links">
-                    <li><a href="{% url 'login' %}">Register</a></li>
+                    <li><a href="#">Register</a></li>
                     <li><a href="#">Login</a></li>
                 </ul>
             </div>
@@ -89,17 +89,17 @@
                             <p class="text-success">Hi,
                                 {{user.username}}</p>
                             <li>
-                                <a class="btn" href="{% url 'logout' %}">Logout</a>
+                                <a class="btn" href="{% url 'auth_logout' %}">Logout</a>
                             </li>
                             <li>
-                                <a class="btn" href="{% url 'password_reset' %}">Reset Password</a>
+                                <a class="btn" href="{% url 'auth_password_reset' %}">Reset Password</a>
                             </li>
                         </ul>
                         {% else %}
                         <ul class="dropdown-menu dropdown-menu-right myaccount-menu">
                             <li>
-                            <a class="btn" href="{% url 'signup' %}">Sign Up</a></li>
-                            <li><a class="btn" href="{% url 'login' %}">Login</a></li>
+                            <a class="btn" href="{% url 'registration_register' %}">Sign Up</a></li>
+                            <li><a class="btn" href="{% url 'auth_login' %}">Login</a></li>
                         </ul>
                         {% endif %}
                     </li>

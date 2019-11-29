@@ -23,16 +23,17 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'shop.apps.ShopConfig',
-    # 'accounts.apps.AccountsConfig', 
-    'users.apps.UsersConfig', 
+    'registration',
+    # 'users.apps.UsersConfig', 
     'crispy_forms',
 ]
 
 
-AUTH_USER_MODEL = 'users.CustomUser' # new
+# AUTH_USER_MODEL = 'users.CustomUser' # new
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -49,7 +50,7 @@ ROOT_URLCONF = 'thecloudcart.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -70,12 +71,8 @@ WSGI_APPLICATION = 'thecloudcart.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbo36ov07asl9l',
-        'USER': 'kveokxudpgmdzl',
-        'PASSWORD': '4f478405f5cddb93c3b92845c794d81dd58fd178988bf7006f3f23883cdf13b7',
-        'HOST': 'ec2-54-235-89-123.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -131,12 +128,26 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
 
-
-LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
+REGISTRATION_OPEN = True                # If True, users can register
+# REGISTRATION_AUTO_LOGIN = True  # If True, the user will be automatically logged in.
+LOGIN_REDIRECT_URL = 'home'  # The page you want users to arrive at after they successful log in
+LOGIN_URL = '/accounts/login/'  
 
-# For sending mails to reset the password
-EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
-EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
+
+
+ACCOUNT_ACTIVATION_DAYS = 3
+#EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+#EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+EMAIL_HOST_USER = "mdnraza19@gmail.com"
+EMAIL_HOST_PASSWORD = "mnraza@12345"
+
+
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+SITE_ID =1

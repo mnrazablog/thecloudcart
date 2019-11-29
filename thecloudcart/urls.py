@@ -8,8 +8,8 @@ urlpatterns = [
     path('',include('shop.urls') ),
     # path('accounts/', include('django.contrib.auth.urls')), 
     # path('accounts/', include('accounts.urls')), #new
-    
-    path('users/', include('users.urls')),
-    path('users/', include('django.contrib.auth.urls')),
+    path('accounts/', include('registration.backends.default.urls')), 
+    # path('accounts/', include('registration.backends.simple.urls')),#path('users/', include('user.urls')),
+    #path('users/', include('django.contrib.auth.urls')),
     
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

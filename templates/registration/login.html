@@ -1,18 +1,20 @@
-{% extends 'shop/base.html' %}
-{% load static %}
+{% extends "shop/base.html" %}
 {% load crispy_forms_tags %}
-{% block title %} Login Page | The Cloud Cart {% endblock %}
+
 {% block body %}
 <div class="container">
-    <div class="col-md-8 col-md-offset-2">
-        <h2>Login</h2>
-        <form method="post" class="form">
-            {% csrf_token %}
-            {{ form|crispy }}
-            <button class="btn btn-warning" type="submit">Login Here</button>
+	<div class="col-md-6 col-md-offset-3">
+		<h1 class="text-center text-warning">Login Page</h1>
+        <form method="post" action=".">
+                {% csrf_token %}
+                {{ form|crispy }}
+
+                <input class="btn btn-primary btn-md" type="submit" value="Login Here" />
+                <input type="hidden" name="next" value="{{ next }}" />
         </form>
-        <a class="btn" href="{% url 'password_reset' %}">Forgot Password ?</a><br>
-        Don't have account? <a href="{% url 'signup' %}" class="btn btn-warning">Register Here</a>
-    </div>
+
+        <p>Not a member? <a href="{% url 'registration_register' %}">Register Here</a>!</p>
+	</div>
 </div>
+
 {% endblock %}
